@@ -1,8 +1,54 @@
-/* First pass: browser default styling is mostly being used. */
 body {
+    margin: 0;
+    padding: 0 24px;
     font-family: Arial, sans-serif;
-    margin: 30px;
+    line-height: 1.6;
+    color: #e2e8f0;
+    background: #0f172a;
 }
-h1 {
-    color: #1e293b;
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 0;
+    border-bottom: 1px solid #334155;
+}
+
+.brand {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+}
+
+nav a, a {
+    color: #5eead4;
+}
+
+main {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 35px 0 0;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+article {
+    padding: 18px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 10px;
 }
