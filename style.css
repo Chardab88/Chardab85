@@ -1,0 +1,8 @@
+/* First pass: browser default styling is mostly being used. */
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+h1 {
+    color: #1e293b;
+}
