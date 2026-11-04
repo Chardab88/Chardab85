@@ -1,53 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Charles Zegalia | Computer Science Student</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Charles Zegalia | Computer Science Student</title>
+<meta name="description" content="Portfolio of Charles Zegalia, a computer science student and aspiring software engineer.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="nav">
-        <a class="brand" href="#top">Charles Zegalia</a>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">Charles Zegalia</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#interests">Interests</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-    <main id="top">
-        <section id="about">
-            <p>Computer science student</p>
-            <h1>Hi, I'm Charles.</h1>
-            <p>I am a computer science student interested in programming, web development,
-            and building useful projects. I have experience with Java and Python.</p>
-        </section>
+<main class="wrap" id="top">
+  <section class="hero" id="about">
+    <div class="hero-text">
+      <p class="eyebrow">Computer science student</p>
+      <h1>Hi, I’m Charles.</h1>
+      <p>I’m a computer science student with experience developing software and web applications. I have a background in Java and Python, with a focus on building practical projects that solve problems and improve functionality.</p>
+      <p>My experience includes developing personal projects, creating web scrapers, and working on interactive applications. I’m interested in the entire software development process, from planning and designing to writing, testing, and improving code. I enjoy learning new technologies and finding the right tools to bring my ideas to life.</p>
+      <p>With a passion for programming and problem-solving, I enjoy taking on challenging projects and developing my skills. My goal is to become a software engineer and build useful, efficient software that combines strong functionality with a good user experience.</p>
+      <p><a class="btn" href="Resume.pdf">View my resume (PDF)</a></p>
+    </div>
+    <img class="photo" src="photo.jpg" width="1200" height="802" alt="Charles in a white helmet and blue racing suit steering a blue go-kart through a turn on an asphalt track.">
+  </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects">
-                <article>
-                    <h3>NASCAR Game Site</h3>
-                    <p>A website for my racing-themed games.</p>
-                </article>
-                <article>
-                    <h3>NASCAR Higher/Lower</h3>
-                    <p>A game where you guess which driver has the bigger statistic.</p>
-                </article>
-            </div>
-        </section>
+  <section id="interests">
+    <h2>Interests</h2>
+    <ul class="chips">
+      <li>Auto racing</li><li>Chess</li><li>Making and playing video games</li><li>Web projects</li>
+    </ul>
+  </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <p>Python, Java, HTML, CSS, and JavaScript.</p>
-        </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>NASCAR Game Site</h3>
+        <p>A NASCAR-themed game website launched on GitHub Pages, home to my racing-themed games.</p>
+        <p class="tech">HTML · CSS · JavaScript</p>
+        <a href="https://chardab88.github.io/Chardab88.com/index.html">Visit the site</a>
+      </article>
+      <article class="card">
+        <h3>Daily NASCAR Wordle-Style Game</h3>
+        <p>A daily guessing game based on NASCAR drivers and their stats.</p>
+        <p class="tech">HTML · CSS · JavaScript</p>
+        <a href="https://chardab88.github.io/Chardab88.com/index.html">Play it</a>
+      </article>
+      <article class="card">
+        <h3>NASCAR Higher/Lower</h3>
+        <p>A higher-or-lower game where you guess which driver has the bigger stat.</p>
+        <p class="tech">HTML · CSS · JavaScript</p>
+        <a href="https://chardab88.github.io/Chardab88.com/index.html">Play it</a>
+      </article>
+      <article class="card">
+        <h3>This Portfolio Website</h3>
+        <p>A hand-written, responsive portfolio with light and dark modes, built without a template.</p>
+        <p class="tech">HTML · CSS · JavaScript</p>
+        <a href="https://github.com/chardab88/chardab88.github.io">View the code</a>
+      </article>
+    </div>
+  </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>cczegalia@gmail.com</p>
-        </section>
-    </main>
+  <section id="skills">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Languages</dt><dd>Python, Java, HTML, CSS, JavaScript</dd>
+      <dt>Tools</dt><dd>Git, GitHub, GitHub Pages</dd>
+      <dt>Learning</dt><dd>C++, Linux, Claude AI</dd>
+    </dl>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul class="timeline">
+      <li><span class="date">Sep 2022 – Present</span><div><h3>Shift Leader and Cook, Panda Express</h3><p>Manage where team members work, take inventory, and place truck orders. Training to become an assistant manager.</p></div></li>
+      <li><span class="date">Aug 2021 – Nov 2022</span><div><h3>Cook, Ledo Pizza</h3><p>Prepared food and kept the kitchen clean.</p></div></li>
+      <li><span class="date">May 2021 – Aug 2021</span><div><h3>Pool Technician, Lifeline Pool and Spa</h3><p>Cleaned, repaired, and built pools in Waldorf, Maryland.</p></div></li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="timeline">
+      <li><span class="date">Aug 2026 – Present</span><div><h3>St. Mary’s College of Maryland</h3><p>Working toward a four-year degree in computer science. Honors transfer scholarship recipient.</p></div></li>
+      <li><span class="date">Jan 2023 – Jun 2026</span><div><h3>College of Southern Maryland</h3><p>Two-year computer science degree. Courses: Data Structures and Algorithms, Computer Architecture, Computer Science 1–2, Discrete Math, Calculus 1–2, Python. Dean’s List every semester.</p></div></li>
+      <li><span class="date">Aug 2020 – Jun 2024</span><div><h3>Calvert High School</h3><p>MESA team leader, chess club president, NJROTC drone team member. Top 20 in class.</p></div></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Want to talk about a project, an opportunity, or racing? Get in touch.</p>
+    <ul class="links">
+      <li><a href="mailto:cczegalia@gmail.com">cczegalia@gmail.com</a></li>
+      <li><a href="https://github.com/chardab88">GitHub</a></li>
+      <!-- LinkedIn: when you have one, uncomment the line below and put in your URL
+      <li><a href="https://www.linkedin.com/in/YOUR-NAME/">LinkedIn</a></li> -->
+    </ul>
+  </section>
+</main>
+
+<footer class="wrap"><p>© 2026 Charles Zegalia</p></footer>
+
 </body>
 </html>

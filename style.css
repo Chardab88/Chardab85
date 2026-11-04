@@ -1,23 +1,51 @@
+/* Intermediate styling: consistent sections, cards, and timelines. */
+:root {
+    --bg: #0f172a;
+    --surface: #1e293b;
+    --text: #e2e8f0;
+    --muted: #a5b4c8;
+    --accent: #5eead4;
+    --line: #334155;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.7 Arial, sans-serif;
+}
+
+.wrap {
+    max-width: 990px;
+    margin: 0 auto;
     padding: 0 24px;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #e2e8f0;
-    background: #0f172a;
+}
+
+a {
+    color: var(--accent);
 }
 
 .nav {
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+    padding: 16px 24px;
+}
+
+.nav-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    padding: 18px 0;
-    border-bottom: 1px solid #334155;
+    gap: 16px;
 }
 
 .brand {
-    color: white;
+    color: var(--text);
     font-weight: bold;
     text-decoration: none;
 }
@@ -25,30 +53,57 @@ body {
 nav {
     display: flex;
     gap: 18px;
+    flex-wrap: wrap;
 }
 
-nav a, a {
-    color: #5eead4;
-}
-
-main {
-    max-width: 950px;
-    margin: 0 auto;
+nav a {
+    color: var(--muted);
+    text-decoration: none;
 }
 
 section {
-    padding: 35px 0 0;
+    padding: 42px 0 0;
 }
 
-.projects {
+.hero {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 30px;
+    align-items: start;
 }
 
-article {
-    padding: 18px;
-    background: #1e293b;
-    border: 1px solid #334155;
+.photo {
+    width: 100%;
+    height: auto;
     border-radius: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li {
+    display: grid;
+    grid-template-columns: 175px 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.date, .timeline p {
+    color: var(--muted);
 }
