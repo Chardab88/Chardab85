@@ -17,6 +17,7 @@
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
+      <button id="theme" type="button" aria-label="Switch between light and dark mode">Light</button>
     </nav>
   </div>
 </header>
@@ -104,13 +105,26 @@
     <ul class="links">
       <li><a href="mailto:cczegalia@gmail.com">cczegalia@gmail.com</a></li>
       <li><a href="https://github.com/chardab88">GitHub</a></li>
-      <!-- LinkedIn: when you have one, uncomment the line below and put in your URL
-      <li><a href="https://www.linkedin.com/in/YOUR-NAME/">LinkedIn</a></li> -->
+      <li><a href="https://www.linkedin.com/in/charles-zegalia-329584448/">LinkedIn</a></li>
     </ul>
   </section>
 </main>
 
 <footer class="wrap"><p>© 2026 Charles Zegalia</p></footer>
 
+<script>
+(function () {
+  var btn = document.getElementById('theme'), root = document.documentElement;
+  function set(t) { root.setAttribute('data-theme', t); btn.textContent = t === 'dark' ? 'Light' : 'Dark'; }
+  var saved = null;
+  try { saved = localStorage.getItem('theme'); } catch (e) {}
+  set(saved || 'dark');
+  btn.addEventListener('click', function () {
+    var t = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    set(t);
+    try { localStorage.setItem('theme', t); } catch (e) {}
+  });
+})();
+</script>
 </body>
 </html>
